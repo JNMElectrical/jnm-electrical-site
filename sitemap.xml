@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jnmelectricalservices.com/</loc>
+    <loc>https://www.jnmelectricalservices.com/</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jnmelectricalservices.com/fault</loc>
+    <loc>https://www.jnmelectricalservices.com/fault.html</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jnmelectricalservices.com/switchboard-upgrades</loc>
+    <loc>https://www.jnmelectricalservices.com/switchboard-upgrades.html</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jnmelectricalservices.com/ev-charger</loc>
+    <loc>https://www.jnmelectricalservices.com/ev-charger.html</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jnmelectricalservices.com/renovations</loc>
+    <loc>https://www.jnmelectricalservices.com/renovations.html</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jnmelectricalservices.com/granny-flat</loc>
+    <loc>https://www.jnmelectricalservices.com/granny-flat.html</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://jnmelectricalservices.com/commercial</loc>
+    <loc>https://www.jnmelectricalservices.com/commercial.html</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
