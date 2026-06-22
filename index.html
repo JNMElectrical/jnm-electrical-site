@@ -397,7 +397,8 @@ footer{background:var(--dark);padding:60px 5% 30px;}
 
   /* About strip */
   .about-strip{padding:44px 4%;}
-  .about-strip-inner img{display:none;} /* hide image, keep checklist */
+  .about-strip-inner{grid-template-columns:1fr;}
+  .about-strip-img{aspect-ratio:16/10;max-height:260px;order:-1;margin-bottom:20px;}
 
   /* Services grid */
   .services-grid{grid-template-columns:1fr;gap:12px;margin-top:32px;}
