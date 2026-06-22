@@ -396,8 +396,8 @@ footer{background:var(--dark);padding:60px 5% 30px;}
   .section-sub{font-size:14px;}
 
   /* About strip */
-  .about-intro-img{aspect-ratio:auto;}
-  .about-intro-img img{height:auto;object-fit:contain;}
+ .about-intro-img{aspect-ratio:auto;max-height:none;overflow:visible;}
+ .about-intro-img img{width:100%;height:auto;object-fit:contain;object-position:top;display:block;}
 
   /* Services grid */
   .services-grid{grid-template-columns:1fr;gap:12px;margin-top:32px;}
