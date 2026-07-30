@@ -4,6 +4,14 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Electrician Hills District | Free Quotes | JNM Electrical Lic. 401509C</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16531612699"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16531612699');
+</script>
 <meta name="description" content="JNM Electrical — licensed electricians in Sydney's Hills District. Free electrical estimates online. Granny flats, renovations, switchboard upgrades, EV chargers. Lic. 401509C. Call Jacob: 0432 740 124."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1724,6 +1732,7 @@ async function submitForm() {
       })
     });
     if (res.ok) {
+      gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
       document.getElementById('form-content').style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
     } else {
@@ -1767,6 +1776,7 @@ async function submitMobileForm() {
       })
     });
     if (res.ok) {
+      gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
       btn.style.display = 'none';
       btn.previousElementSibling.style.display = 'none'; // hide note
       document.getElementById('mf-success').style.display = 'block';
@@ -1803,7 +1813,12 @@ async function submitMobileForm() {
     });
   });
 })();
-
+// ─── PHONE CLICK TRACKING ─────────────────────────────
+document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
+  });
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
@@ -2047,6 +2062,7 @@ async function submitEnquiry() {
       })
     });
     if (res.ok) {
+      gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
       document.getElementById('enquiry-form-wrap').style.display = 'none';
       const success = document.getElementById('enquiry-success');
       success.style.display = 'block';
