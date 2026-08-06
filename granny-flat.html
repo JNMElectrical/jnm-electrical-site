@@ -276,6 +276,13 @@ footer{background:var(--dark);padding:48px 5% 24px;}
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "x9qdcutlke");
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16531612699"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16531612699');
 </script>
 <link rel="canonical" href="https://www.jnmelectricalservices.com/granny-flat">
 <meta name="robots" content="index, follow">
@@ -776,35 +783,5 @@ async function gfSubmitEnquiry() {
     </div>
   </div>
 </section>
-</body>
-</html>
-<script>
-function submitLP(formId, successId) {
-  const form = document.getElementById(formId);
-  const success = document.getElementById(successId);
-  if (!form) return;
-  const data = new FormData();
-  data.append('_subject', 'New Quote Request — Granny Flat Electrical');
-  form.querySelectorAll('input, select, textarea').forEach(el => {
-    if (el.name) data.append(el.name, el.value);
-  });
-  fetch('https://formspree.io/f/xeedqagw', {
-    method: 'POST', body: data, headers: { 'Accept': 'application/json' }
-  }).then(r => {
-    if (r.ok) {
-      form.style.display = 'none';
-      if (success) success.style.display = 'block';
-    } else {
-      alert('There was a problem sending your request. Please call Jacob on 0432 740 124.');
-    }
-  }).catch(() => {
-    alert('There was a problem sending your request. Please call Jacob on 0432 740 124.');
-  });
-}
-function scrollToQuote() {
-  const q = document.querySelector('.quote-card');
-  if (q) q.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-</script>
 </body>
 </html>
