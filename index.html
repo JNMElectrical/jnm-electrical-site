@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Electrician Hills District | Free Quotes | JNM Electrical Lic. 401509C</title>
+<title>Electrician Hills District | JNM Electrical Lic. 401509C</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16531612699"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-16531612699');
+</script>
 <meta name="description" content="JNM Electrical — licensed electricians in Sydney's Hills District. Free electrical estimates online. Granny flats, renovations, switchboard upgrades, EV chargers. Lic. 401509C. Call Jacob: 0432 740 124."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,14 +139,14 @@ section{padding:84px 5%;}
 .service-link{display:inline-flex;align-items:center;gap:6px;color:var(--teal);font-size:13px;font-weight:600;margin-top:auto;transition:gap 0.2s;cursor:pointer;}
 .service-link:hover{gap:10px;}
 .service-link svg{width:14px;height:14px;stroke:var(--teal);fill:none;stroke-width:2;}
-.service-card-img{height:200px;overflow:hidden;border-radius:12px 12px 0 0;}
+.service-card-img{aspect-ratio:3/4;overflow:hidden;border-radius:12px 12px 0 0;}
 .service-card-img img{width:100%;height:100%;object-fit:cover;display:block;}
 
 /* ─── ABOUT INTRO STRIP ─────────────────────────────── */
 .about-strip{background:#fff;padding:84px 5%;}
 .about-strip-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.about-strip-img{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--mid);display:flex;align-items:center;justify-content:center;}
-.about-strip-img img{width:100%;height:100%;object-fit:cover;}
+.about-strip-img{border-radius:16px;overflow:hidden;background:var(--mid);display:flex;align-items:center;justify-content:center;}
+.about-strip-img img{width:100%;height:auto;display:block;object-fit:contain;}
 .checklist{display:flex;flex-direction:column;gap:14px;margin:24px 0;}
 .check-item{display:flex;align-items:flex-start;gap:12px;}
 .check-icon{width:22px;height:22px;border-radius:50%;background:var(--teal-light);border:1px solid var(--teal);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
@@ -234,8 +242,8 @@ section{padding:84px 5%;}
 /* ─── ABOUT PAGE ────────────────────────────────────── */
 .about-content{max-width:1100px;margin:0 auto;padding:84px 5%;}
 .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:72px;}
-.about-intro-img{border-radius:16px;overflow:hidden;aspect-ratio:4/3;}
-.about-intro-img img{width:100%;height:100%;object-fit:cover;}
+.about-intro-img{border-radius:16px;overflow:hidden;}
+.about-intro-img img{width:100%;height:auto;display:block;object-fit:contain;}
 .about-text p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:18px;}
 .about-sig{margin-top:28px;padding-top:24px;border-top:1px solid var(--border);}
 .about-sig strong{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;color:var(--text);display:block;}
@@ -346,6 +354,8 @@ footer{background:var(--dark);padding:60px 5% 30px;}
   .faq-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;gap:32px;}
   .about-intro{grid-template-columns:1fr;}
+  .about-intro-img{order:2;}
+  .about-text{order:1;}
   .values-grid{grid-template-columns:1fr 1fr;}
   .builder-pack-inner{grid-template-columns:1fr;}
   .project-row{grid-template-columns:1fr;}
@@ -396,13 +406,14 @@ footer{background:var(--dark);padding:60px 5% 30px;}
   .section-sub{font-size:14px;}
 
   /* About strip */
-  .about-strip{padding:44px 4%;}
-  .about-strip-inner img{display:none;} /* hide image, keep checklist */
+ .about-intro-img{aspect-ratio:auto;max-height:none;overflow:visible;}
+ .about-intro-img img{width:100%;height:100%;object-fit:contain;object-position:top;display:block;}
 
   /* Services grid */
   .services-grid{grid-template-columns:1fr;gap:12px;margin-top:32px;}
   .service-card{padding:22px;}
-
+  .service-card-img{max-height:280px;}
+  
   /* Builders section */
   .builders-inner{gap:28px;}
   .builders-tags{gap:8px;}
@@ -476,7 +487,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
 <meta property="og:description" content="Licensed electricians in Sydney's Hills District. Free online electrical estimates. Granny flats, renovations, switchboard upgrades, EV chargers. Lic. 401509C. Call 0432 740 124." id="og-desc">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.jnmelectricalservices.com/" id="og-url">
-<meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/69ae02b012f7fc3c0e31587c/32ad5deb-42d1-4171-a3b2-e3c68454a217/JNM+LOGO+%281%29.png">
+<meta property="og:image" content="images/jnm-logo.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -487,7 +498,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
       "name": "JNM Electrical Services",
       "url": "https://www.jnmelectricalservices.com",
       "telephone": "+61432740124",
-      "image": "https://images.squarespace-cdn.com/content/v1/69ae02b012f7fc3c0e31587c/32ad5deb-42d1-4171-a3b2-e3c68454a217/JNM+LOGO+%281%29.png",
+      "image": "images/jnm-logo.png",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Castle Hill",
@@ -502,11 +513,6 @@ footer{background:var(--dark);padding:60px 5% 30px;}
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
         "opens": "07:00",
         "closes": "18:00"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "47"
       },
       "sameAs": [
         "https://www.instagram.com/jnm.electrical/"
@@ -590,7 +596,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
 <!-- ═══════════════════ NAV ═══════════════════ -->
 <nav>
   <div class="nav-logo">
-    <img src="https://images.squarespace-cdn.com/content/v1/69ae02b012f7fc3c0e31587c/32ad5deb-42d1-4171-a3b2-e3c68454a217/JNM+LOGO+%281%29.png" alt="JNM Electrical Services">
+    <img src="images/jnm-logo.png" alt="JNM Electrical Services">
   </div>
   <ul class="nav-links">
     <li><a href="/" onclick="showPage('home');return false;">Home</a></li>
@@ -833,7 +839,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
         <a href="tel:0432740124" class="btn-call" style="margin-top:8px;display:inline-flex;">Call Jacob Now — 0432 740 124</a>
       </div>
       <div class="about-strip-img">
-        <img src= "images/jacob.jpg" alt="Jacob on site">
+        <img src= "images/jacob.jpg" alt="Jacob">
       </div>
     </div>
   </div>
@@ -845,7 +851,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
     <p class="section-sub" contenteditable="false">Whether it's something urgent or a planned upgrade, here's what Hills District homeowners call us for most.</p>
     <div class="services-grid">
       <div class="service-card" style="padding:0;overflow:hidden;">
-        <div class="service-card-img"> <img src="images/cb-repair.jpg"  alt="Burnt out circuit breaker" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+        <div class="service-card-img"> <img src="images/cb-repair.jpg" alt="Burnt out circuit breaker" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div style="padding:24px;">
         <div class="service-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
         <h3 contenteditable="false">Faults & Tripping Circuits</h3>
@@ -854,7 +860,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
         </div>
       </div>
       <div class="service-card" style="padding:0;overflow:hidden;">
-        <div class="service-card-img"> <img src="images/walk-in.jpg"  alt="Walk-in robe lighting" style="width:100%;height:100%;object-fit:fit-off;display:block;"></div>
+        <div class="service-card-img"> <img src="images/walk-in.jpg"  alt="Walk-in robe lighting" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div style="padding:24px;">
         <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg></div>
         <h3 contenteditable="false">Lighting & Powerpoints</h3>
@@ -863,7 +869,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
         </div>
       </div>
       <div class="service-card" style="padding:0;overflow:hidden;">
-        <div class="service-card-img"> <img src="images/renovation.jpg"  alt="Bathroom Renovation" style="width:100%;height:100%;object-fit:fit-off;object-position:top;   display:block;"></div>
+        <div class="service-card-img"> <img src="images/renovation.jpg"  alt="Bathroom Renovation" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div style="padding:24px;">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
         <h3 contenteditable="false">Kitchen & Bathroom Renos</h3>
@@ -872,7 +878,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
         </div>
       </div>
       <div class="service-card" style="padding:0;overflow:hidden;">
-        <div class="service-card-img"> <img src="images/switchboard-upgrade.jpg" alt="Switchboard Upgrades" style="width:100%;height:100%;object-fit:fit-off;display:block;"></div>
+        <div class="service-card-img"> <img src="images/switchboard-upgrade.jpg" alt="Switchboard Upgrades" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div style="padding:24px;">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <h3 contenteditable="false">Switchboard Upgrades</h3>
@@ -881,7 +887,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
         </div>
       </div>
       <div class="service-card" style="padding:0;overflow:hidden;">
-        <div class="service-card-img"> <img src="images/granny-flat.jpg" alt="Granny Flat" style="width:100%;height:100%;object-fit:fit-off;display:block;"></div>
+        <div class="service-card-img"> <img src="images/granny-flat.jpg" alt="Granny Flat" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
         <div style="padding:24px;">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <h3 contenteditable="false">Granny Flats & New Builds</h3>
@@ -1024,7 +1030,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
     <div class="page-hero-bg"><img src="https://images.squarespace-cdn.com/content/v1/69ae02b012f7fc3c0e31587c/91f167f2-fc70-4375-9f1d-c8c46a0613ff/IMG_2935.jpg" alt=""></div>
     <div class="page-hero-content">
       <div class="hero-badge">Our Work</div>
-      <h1 contenteditable="false">Our Recent Projects</h1>
+      <h2 contenteditable="false">Our Recent Projects</h2>
       <p contenteditable="false">Quality electrical work across Sydney — granny flats, renovations, new builds and commercial.</p>
       <a href="tel:0432740124" class="btn-call" style="display:inline-flex;">Discuss Your Project</a>
     </div>
@@ -1155,7 +1161,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
     <div class="page-hero-bg"><img src="images/concord-pendant.jpg" alt=""></div>
     <div class="page-hero-content">
       <div class="hero-badge">About Us</div>
-      <h1 contenteditable="false">About JNM Electrical Services</h1>
+      <h2 contenteditable="false">About JNM Electrical Services</h>
       <p contenteditable="false">We're a Sydney-based electrical contracting business specialising in granny flats, renovations, new builds and commercial projects.</p>
     </div>
   </div>
@@ -1163,7 +1169,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
   <div class="about-content">
     <div class="about-intro">
       <div class="about-intro-img">
-        <img src="images/concord-pendant.jpg" alt="JNM Electrical">
+        <img src="images/jacob.jpg" alt="JNM Electrical">
       </div>
       <div class="about-text">
         <p class="section-label">Our Story</p>
@@ -1544,7 +1550,7 @@ footer{background:var(--dark);padding:60px 5% 30px;}
 <footer id="site-footer">
   <div class="footer-grid">
     <div>
-      <div class="footer-logo"><img src="https://images.squarespace-cdn.com/content/v1/69ae02b012f7fc3c0e31587c/32ad5deb-42d1-4171-a3b2-e3c68454a217/JNM+LOGO+%281%29.png" alt="JNM Electrical Services"></div>
+      <div class="footer-logo"><img src="images/jnm-logo.png" alt="JNM Electrical Services"></div>
       <p class="footer-desc" contenteditable="false">Licensed electricians based in the Hills District, delivering reliable electrical work for homes, builders and businesses across Sydney.</p>
       <div class="footer-contact">
         <a href="tel:0432740124">0432 740 124</a>
@@ -1721,6 +1727,7 @@ async function submitForm() {
       })
     });
     if (res.ok) {
+      gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
       document.getElementById('form-content').style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
     } else {
@@ -1764,6 +1771,7 @@ async function submitMobileForm() {
       })
     });
     if (res.ok) {
+      gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
       btn.style.display = 'none';
       btn.previousElementSibling.style.display = 'none'; // hide note
       document.getElementById('mf-success').style.display = 'block';
@@ -1800,7 +1808,12 @@ async function submitMobileForm() {
     });
   });
 })();
-
+// ─── PHONE CLICK TRACKING ─────────────────────────────
+document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
+  });
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
@@ -2044,6 +2057,7 @@ async function submitEnquiry() {
       })
     });
     if (res.ok) {
+      gtag('event', 'conversion', {'send_to': 'AW-16531612699/nywXCKeb4LMcEJvI8co9'});
       document.getElementById('enquiry-form-wrap').style.display = 'none';
       const success = document.getElementById('enquiry-success');
       success.style.display = 'block';
