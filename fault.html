@@ -23,15 +23,15 @@
     --teal-deeper: #0d3f41;
     --teal-btn: #0d7a80;
     --teal-btn-hover: #0a6268;
-    --amber: #F59E0B;
-    --amber-light: #FEF3C7;
-    --dark: #111827;
-    --dark-mid: #1f2937;
-    --mid: #374151;
-    --muted: #5c6a72;
-    --light: #e8f0f0;       /* teal-tinted panel bg */
-    --page-bg: #f0f5f5;     /* soft teal-grey page base */
-    --card-bg: #e4eeed;     /* fault cards, slightly deeper */
+    --amber: #e6a817;
+    --amber-light: #fbf1de;
+    --dark: #0a0f0f;
+    --dark-mid: #111618;
+    --mid: #1e2628;
+    --muted: #666;
+    --light: #e6f7f8;       /* teal-tinted panel bg */
+    --page-bg: #f7f6f2;     /* off-white page base, matches index & commercial */
+    --card-bg: #ffffff;     /* fault cards, white to match site's card style */
     --white: #ffffff;
     --red: #dc2626;
     --red-light: #fee2e2;
@@ -139,10 +139,54 @@
   .hero-form-title {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     color: var(--white);
-    margin-bottom: 16px;
+    margin-bottom: 4px;
     letter-spacing: 0.02em;
+  }
+  .hero-form-sub {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 16px;
+  }
+  .hero-form-proof {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.65);
+    margin: 10px 0 4px;
+    line-height: 1.4;
+  }
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .badge-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(52,179,183,0.14);
+    border: 1px solid rgba(52,179,183,0.45);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.01em;
+  }
+  .badge-icon { font-size: 0.95rem; }
+  .hero-or {
+    display: none;
+    align-self: center;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+  }
+  @media(min-width:900px) {
+    .hero-or { display: block; padding: 0 4px; }
+    .hero-form-box { opacity: 0.92; transform: scale(0.97); }
   }
   .hero-badge {
     display: inline-flex;
@@ -211,19 +255,32 @@
   .btn-outline:hover { border-color: var(--teal); color: var(--teal); }
 
   .hero-trust {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 4px;
+  }
+  @media(min-width:520px) {
+    .hero-trust { grid-template-columns: repeat(4, 1fr); }
   }
   .trust-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: #9ca3af;
-    font-size: 0.88rem;
-    font-weight: 500;
+    gap: 10px;
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(52,179,183,0.4);
+    border-radius: 10px;
+    padding: 12px 14px;
+    line-height: 1.2;
   }
-  .trust-item .icon { color: var(--teal); font-size: 1rem; }
+  .trust-item .icon {
+    color: var(--teal);
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
 
   /* ── HERO FORM ── */
   .hero-form-section {
@@ -334,14 +391,14 @@
 
   /* ── URGENCY STRIP ── */
   .urgency-strip {
-    background: var(--amber);
+    background: var(--teal-deeper);
     padding: 14px 20px;
     text-align: center;
   }
   .urgency-strip p {
     font-weight: 700;
     font-size: 0.95rem;
-    color: #1a1100;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -349,10 +406,26 @@
     flex-wrap: wrap;
   }
   .urgency-strip a {
-    color: var(--teal-deeper);
+    color: var(--teal);
     text-decoration: underline;
     font-weight: 800;
   }
+
+  .promo-strip {
+    background: var(--white);
+    border-bottom: 1px dashed rgba(13,63,65,0.25);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+  }
+  .promo-chip {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--teal-deeper);
+  }
+  .promo-chip strong { color: var(--teal-btn); font-weight: 800; }
 
   /* ── SECTION WRAPPER ── */
   .section { padding: 60px 20px; }
@@ -842,20 +915,26 @@
   <div class="hero-split">
     <div class="hero-left">
       <div class="hero-badge">Hills District &amp; Sydney-Wide</div>
-      <h1>Circuits Tripping?<br><em>Lost Power</em> in a Room?</h1>
-      <p class="hero-sub">We find the fault fast and fix it properly — same day where possible. No call-out fee guessing games, no unnecessary parts, no drama.</p>
+      <h1>Fault Finding Electrician<br><em>Hills District</em></h1>
+      <p class="hero-sub">Circuit tripping? No power in a room? Safety switch won't reset? We find the fault fast and fix it properly — same day where possible. No guessing games, no unnecessary parts.</p>
       <div class="hero-ctas">
         <a href="tel:0432740124" class="btn-primary">📞 Call Now — We Pick Up</a>
       </div>
       <div class="hero-trust">
-        <span class="trust-item"><span class="icon">✓</span> Lic. 401509C</span>
-        <span class="trust-item"><span class="icon">✓</span> Same-day available</span>
-        <span class="trust-item"><span class="icon">✓</span> Fully insured</span>
-        <span class="trust-item"><span class="icon">✓</span> Fixed-price diagnosis</span>
+        <span class="trust-item"><span class="icon">📋</span> Lic. 401509C</span>
+        <span class="trust-item"><span class="icon">⚡</span> Same-Day</span>
+        <span class="trust-item"><span class="icon">🛡️</span> Fully Insured</span>
+        <span class="trust-item"><span class="icon">💲</span> Fixed Prices</span>
       </div>
     </div>
+    <div class="hero-or">OR</div>
     <div class="hero-form-box" id="form-panel">
-      <p class="hero-form-title">Get Help Today</p>
+      <p class="hero-form-title">Rather We Call You?</p>
+      <p class="hero-form-sub">Fill this in and we'll call back — usually within the hour.</p>
+      <div class="trust-badges">
+        <div class="badge-chip"><span class="badge-icon">🛡️</span><span>Fully Insured</span></div>
+        <div class="badge-chip"><span class="badge-icon">📋</span><span>Lic. 401509C</span></div>
+      </div>
       <form id="enquiry-form-top" action="https://formspree.io/f/xeedqagw" method="POST">
         <input type="hidden" name="page" value="fault-finding">
         <div class="hero-form-row2">
@@ -896,7 +975,12 @@
 
 <!-- URGENCY STRIP -->
 <div class="urgency-strip">
-  <p>⚡ Power out right now? Call us directly — <a href="tel:0432740124">0432 740 124</a> — we pick up.</p>
+  <p>⚡ Power out right now? Call us directly — <a href="tel:0432740124">0432 740 124</a></p>
+</div>
+
+<!-- CALL OUT FEE STRIP -->
+<div class="promo-strip">
+  <span class="promo-chip"><strong>$0</strong> Call Out Fee*</span>
 </div>
 
 
